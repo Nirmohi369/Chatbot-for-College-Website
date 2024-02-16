@@ -1,0 +1,66 @@
+version: "2.0"
+
+stories:
+
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ask for fees long
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: know_fees
+  - action: utter_ask_semester
+  - intent: semester_info
+  - action: utter_finding_fees
+  - action: action_know_fees
+  - intent: thanks
+  - action: utter_you_are_welcome
+  - action: utter_goodbye
+
+- story: ask for fees short
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: know_fees_for_semester
+  - action: utter_finding_fees
+  - action: action_know_fees
+  - intent: thanks
+  - action: utter_you_are_welcome
+  - action: utter_goodbye
+
+- story: ask for subjects long
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: know_subjects
+  - action: utter_ask_semester
+  - intent: semester_info
+  - action: utter_finding_subjects
+  - action: action_know_subjects
+  - intent: thanks
+  - action: utter_you_are_welcome
+  - action: utter_goodbye
+
+- story: ask for subjects short
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: know_subjects_for_semester
+  - action: utter_finding_subjects
+  - action: action_know_subjects
+  - intent: thanks
+  - action: utter_you_are_welcome
+  - action: utter_goodbye
+
+- story: ask for notice
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: know_notice
+  - action: utter_notice
+  - intent: thanks
+  - action: utter_you_are_welcome
+  - action: utter_goodbye

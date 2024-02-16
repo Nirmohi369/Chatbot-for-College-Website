@@ -1,0 +1,53 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - know_fees
+  - know_subjects
+  - know_fees_for_semester
+  - know_subjects_for_semester
+  - semester_info
+  - thanks
+  - bot_challenge
+actions:
+  - action_know_fees
+  - action_know_subjects
+
+entities:
+  - semester
+
+slots:
+  semester:
+    type: text
+    auto_fill: true
+
+responses:
+  utter_greet:
+  - text: "Hey! How can I help you?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_ask_semester:
+  - text: "Which semester info do you want?"
+
+  utter_finding_fees:
+  - text: "Ok, Give me a second to look it up for {semester} semester"
+
+  utter_finding_subjects:
+  - text: "Ok, Give me a second to look it up for {semester} semester"
+
+  utter_you_are_welcome:
+  - text: "You are welcome."
+
+  utter_iamabot:
+  - text: "I am AI bot."
+
+  utter_notice:
+  - text: "let me look up for latest notice"
+    image: "https://www.google.com/search?q=mbit+college+website&sxsrf=ALeKk03JJ7ypht2CqNeq4cdvD__mDg0ktA:1618639970576&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi7m9zjz4TwAhVOSX0KHXQhCN4Q_AUoAXoECAEQAw#imgrc=Ry_5UTvuCWaN9M"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

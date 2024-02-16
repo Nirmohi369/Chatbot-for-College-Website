@@ -1,0 +1,95 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: know_fees
+  examples: |
+    - can you tell me the fees?
+    - could you tell me the fees?
+    - i need you tell me fees?
+    - can you help me know the fees?
+    - what are the fees?
+
+- intent: know_subjects
+  examples: |
+    - can you tell me subjects?
+    - can you help me know my subjects?
+    - could you tell me the subjects?
+    - i need you to tell me subjects?
+    - what are the subjects?
+
+- intent: know_fees_for_semester
+  examples: |
+    - can you tell me the fees of [7](semester) semester?
+    - could you tell me the fees of [6](semester) semester?
+    - i need you tell me fees of [4](semester) semester?
+    - can you help me know the fees of [3](semester) semester?
+    - what are the fees of [5](semester) semester
+
+- intent: know_subjects_for_semester
+  examples: |
+    - can you tell me subjects of [7](semester) semester ?
+    - can you help me know my subjects of [6](semester) semester?
+    - could you tell me the subjects of [4](semester) semester?
+    - i need you to tell me subjects of [3](semester) semester?
+    - what are the subjects of [5](semester) semester?
+
+- intent: semester_info
+  examples: |
+    - [8](semester)
+    - [7](semester)
+    - [6](semester)
+    - [5](semester)
+    - [4](semester)
+    - [3](semester)
+    - [2](semester)
+    - [1](semester)
+
+- intent: know_notice
+  examples: |
+    - tell me about latest notice in college?
+    - latest news about college
+    - any message from college
+    
+- intent: thanks
+  examples: |
+    - thank you
+    - thanks for the help
+    - great, thank you
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+ 
